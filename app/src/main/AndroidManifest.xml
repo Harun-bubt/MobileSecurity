@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobilesecurity.mobileapp">
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true"/>
+
+
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+   <!-- <uses-permission android:name="com.android.vending.BILLING" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.READ_ALARM"/>
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.WRITE_ALARM"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.mobilesecurity.mobileapp.base.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true"/>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <activity
+            android:name="com.mobilesecurity.mobileapp.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+
+        </activity>
+        <activity android:name="com.mobilesecurity.mobileapp.SplishActivity"
+            android:theme="@style/AppTheme">
+
+
+        </activity>
+        <activity android:name="com.mobilesecurity.mobileapp.PermissionActivity">
+
+        </activity>
+
+        <activity
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.EulaActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.FullscanActivity"
+            android:label="@string/virus_scan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.SdcardScanActivity"
+            android:label="@string/virus_scan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.SettingsActivity"
+            android:label="@string/title_settings"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme"> </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.AntivirusActivity"
+            android:label="@string/virus_scan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.VirusScan"
+            android:screenOrientation="portrait"
+            android:label="@string/virus_scan"
+        android:theme="@style/MyTranslucentAppTheme"
+
+            />
+        <activity android:name="com.mobilesecurity.mobileapp.AntiVirus.VirusScanSpeed"
+            android:screenOrientation="portrait"
+            android:label="@string/virus_scan"
+            android:theme="@style/MyTranslucentAppTheme"
+            />
+
+        <activity
+            android:label="@string/virus_scan"
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.ScanCompleted"
+            android:theme="@style/MyTranslucentAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@string/virus_scan"
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.DetailUpdateReport"
+            android:theme="@style/MyTranslucentAppTheme"		>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/virus_scan"
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.DetailScanReport"
+            android:theme="@style/MyTranslucentAppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/virus_scan"
+            android:name="com.mobilesecurity.mobileapp.AntiVirus.ReportActivity"
+            android:theme="@style/MyTranslucentAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.PhoneSafeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MyTranslucentAppTheme"
+            android:label="@string/Anti_theft"
+            />
+        <activity
+            android:name="com.mobilesecurity.mobileapp.PhoneSafeSetting1Activity"
+            android:launchMode="singleTask"
+            android:label="@string/Anti_theft"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="com.abc.security.PhoneSafeSetting1Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobilesecurity.mobileapp.ContactsActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <activity android:name="com.mobilesecurity.mobileapp.AntiTheft.SetUp1"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.mobilesecurity.mobileapp.AntiTheft.SetUp2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name="com.mobilesecurity.mobileapp.AntiTheft.SetUp4"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.mobilesecurity.mobileapp.AntiTheft.LostFind"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <service
+            android:name="com.mobilesecurity.mobileapp.service.PhoneSafeService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.mobilesecurity.mobileapp.receiver.SimChangeReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mobilesecurity.mobileapp.service.GpsTraceService"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- Declaring broadcast receiver for BOOT_COMPLETED event. -->
+        <receiver android:name="com.mobilesecurity.mobileapp.AntiVirus.BootCompletedReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:enabled="true" android:name="com.mobilesecurity.mobileapp.AntiVirus.MonitorShieldService" />
+
+
+        <provider
+            android:name="com.mobilesecurity.mobileapp.db.BlackListProvider"
+            android:authorities="com.mobilesecurity.mobileapp.blackList"
+            android:exported="false"/>
+        <provider
+            android:name="com.mobilesecurity.mobileapp.db.LogProvider"
+            android:authorities="com.mobilesecurity.mobileapp.log"
+            android:exported="false"/>
+        <provider
+            android:name="com.mobilesecurity.mobileapp.db.QuickBlackListProvider"
+            android:authorities="com.mobilesecurity.mobileapp.quickBlackList"
+            android:exported="false"/>
+
+
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:exported="false"
+            android:label="@string/callb_Home"
+            android:theme="@style/FilePickerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.PreferencesActivity"
+            android:label="@string/wifisec_Home"
+            android:theme="@style/MyTranslucentAppTheme"			>
+
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.SSIDManagerActivity"
+            android:label="@string/wifisec_Home"
+            android:theme="@style/MyTranslucentAppTheme"			>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.MACManagerActivity"
+            android:label="@string/wifisec_Home"
+            android:theme="@style/MyTranslucentAppTheme"			>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.LocationNoticeActivity"
+            android:label="@string/wifisec_Home"
+            android:theme="@style/MyTranslucentAppTheme">
+        </activity>
+        <!-- Receive all scan results in ScanResultsChecker class -->
+
+
+        <receiver
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.ScanResultsChecker"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.wifi.SCAN_RESULTS"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.LocationAccess"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.location.PROVIDERS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.PermissionChangeReceiver"
+            android:enabled="true"/>
+
+        <receiver
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.WakelockHandler"
+            android:enabled="true"/>
+
+        <activity
+            android:name="com.mobilesecurity.mobileapp.WifiSecurity.AskPermissionActivity"
+            android:excludeFromRecents="true"
+            android:parentActivityName="com.mobilesecurity.mobileapp.WifiSecurity.PreferencesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mobilesecurity.mobileapp.WifiSecurity.PreferencesActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.EnterActivity"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.UnlockActivity"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.MainActivity"
+            android:label="@string/apps_lock"
+            android:theme="@style/MyTranslucentAppTheme"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.Splash"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.SetPatternLockActivity"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.SetLockTypeActivity"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.EnterNormalPIN"
+            android:label="@string/apps_lock"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.SetNormalPIN"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.EnterPatternLock"
+            android:excludeFromRecents="true"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.EnterFingerprintActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.SettingsActivity"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme">
+
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.LogsActivity"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.applocker.RequestPermission"
+            android:label="@string/apps_lock"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mobilesecurity.mobileapp.ProActivity"
+            android:label="@string/upgrade_button"
+            android:theme="@style/MyTranslucentAppTheme"/>
+        <activity android:name="com.mobilesecurity.mobileapp.ProActivitySuccess"
+            android:label="@string/upgrade_button"
+            android:theme="@style/MyTranslucentAppTheme"/>
+
+        <activity android:name="com.mobilesecurity.mobileapp.NotificationActivity" />
+        <activity
+            android:name="com.mobilesecurity.mobileapp.Battery.BatterySaver"
+            android:label="@string/batterysaver"
+            android:theme="@style/MyTranslucentAppTheme"/>
+        <activity android:name="com.mobilesecurity.mobileapp.AntiVirus.VirusFoundActivity"
+            android:label="@string/virus_scan"
+            android:theme="@style/MyTranslucentAppTheme"/>
+        <activity android:name="com.mobilesecurity.mobileapp.AntiVirus.VirusFoundActivity2"
+            android:label="@string/virus_scan"
+            android:theme="@style/MyTranslucentAppTheme"/>
+        <activity android:name="com.mobilesecurity.mobileapp.AboutActivity"
+            android:label="@string/app_about"
+            android:theme="@style/MyTranslucentAppTheme"/>
+        <activity android:name="com.mobilesecurity.mobileapp.PrivacyPolicyActivity"
+            android:label="@string/privacy_policy"
+            android:theme="@style/MyTranslucentAppTheme"/>
+        <activity
+            android:name="com.mobilesecurity.mobileapp.Activity_TOSAccept"
+            android:theme="@style/AppTheme">
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mobilesecurity.mobileapp.Registration.Login.LoginActivity1"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobilesecurity.mobileapp.RegisterActivity"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity android:name="com.mobilesecurity.mobileapp.LoginActivity"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+
+        <receiver android:name="com.mobilesecurity.mobileapp.applocker.ScreenReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mobilesecurity.mobileapp.applocker.BootReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.mobilesecurity.mobileapp.applocker.LockService"
+            android:enabled="true"/>
+
+        <receiver
+            android:name="com.mobilesecurity.mobileapp.receiver.DeviceAdminSampleReceiver"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample"/>
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mobilesecurity.mobileapp.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.mobilesecurity.mobileapp.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+
+        <activity
+            android:name="com.mobilesecurity.mobileapp.CallBlocker.ui.MainActivity"
+            android:label="@string/callb_Home"
+            android:theme="@style/MyTranslucentAppTheme">
+
+        </activity>
+
+        <receiver
+            android:name="com.mobilesecurity.mobileapp.CallBlocker.broadcastreceiver.PhoneStateChangeBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.mobilesecurity.mobileapp.CallBlocker.service.ForegroundKeepAppAliveService" />
+
+
+    </application>
+
+</manifest>

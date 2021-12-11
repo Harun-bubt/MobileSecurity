@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.lzyzsd:circleprogress:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/7fcc209c8a161a6687488cf27f75b5f9/jetified-circleprogress-1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/7fcc209c8a161a6687488cf27f75b5f9/jetified-circleprogress-1.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/7fcc209c8a161a6687488cf27f75b5f9/jetified-circleprogress-1.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.github.lzyzsd/circleprogress/1.1.0/b2bfb0d258f046fbd27e15dd518c4c922c67fc2e/circleprogress-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.github.lzyzsd/circleprogress/1.1.0/fa269f7b889681675175a29f1f95b2e4667c05d1/circleprogress-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

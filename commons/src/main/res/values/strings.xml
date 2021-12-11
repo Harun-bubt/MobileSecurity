@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CallBlockR</string>
+    <string name="unblocked_contacts_fragment_name">Contacts List</string>
+    <string name="blocked_contacts_fragment_name">Blocked Contacts</string>
+    <string name="call_log_fragment_name">Call Log</string>
+    <string name="input_number_to_block">Input number you want to block</string>
+    <string name="block_number">Block Number</string>
+    <string name="block">Block</string>
+    <string name="unblock">Unblock</string>
+    <string name="unknown">Unknown</string>
+    <string name="wow_so_empty">Wow! So empty…</string>
+    <string name="your_blocked_contacts_show_up_here">Your blocked contacts will show up here</string>
+    <string name="contacts_on_your_contact_list_will_show_up_here">Contacts on your contact list will show up here</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="accept_permission">Please grant permission</string>
+    <string name="accept_permission_from_settings">Please grant permissions from settings</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="grant_permission">Grant permissions</string>
+    <string name="grant_permission_call_log">Call log permission is required to show your recent calls</string>
+    <string name="grant_permission_contact_list">Contacts permissions are required to show your contacts</string>
+    <string name="grant_permission_phone_receiver">Phone state permissions are required to block incoming calls</string>
+    <string name="grant_permission_description">Please click here to grant permissions</string>
+    <string name="call_blocked">Call Blocked</string>
+    <string name="call_rejected_from">Incoming call from %1$s was blocked</string>
+    <string name="call_blocker_running">Call blocker is active</string>
+    <string name="call_blocker_not_running_due_to_missing_permission">CallBlockR requires permissions to function properly</string>
+    <string name="recents">Recents</string>
+    <string name="contacts">Contacts</string>
+    <string name="blocked">Blocked</string>
+    <string name="incoming">Incoming</string>
+    <string name="outgoing">Outgoing</string>
+    <string name="missed">Missed</string>
+    <string name="voiceMail">VoiceMail</string>
+    <string name="rejected">Rejected</string>
+    <string name="contact_blocked">Contact blocked</string>
+    <string name="contact_unblocked">Contact unblocked</string>
+    <string name="empty_call_log">Your call log is empty</string>
+    <string name="empty_contacts">Your call log is empty</string>
+    <string name="search_contact_hint">Search contact name or number</string>
+</resources>

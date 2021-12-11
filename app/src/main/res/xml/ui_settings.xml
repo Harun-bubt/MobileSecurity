@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/category_def">
+
+        <Preference
+            android:key="callsetting"
+            android:title="Blacklist Settings" />
+
+        <Preference
+            android:key="changepassword"
+            android:title="Change Locker Password" />
+
+        <Preference
+            android:key="changePhone"
+            android:title="Change Safe Phone" />
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

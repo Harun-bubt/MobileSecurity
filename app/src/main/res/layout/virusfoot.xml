@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card-view="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e2e2e2"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/rl_allscanvirus"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/card1"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <ImageView
+                    android:id="@+id/image1"
+
+                    android:layout_width="80dp"
+                    android:layout_height="61dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    card-view:srcCompat="@drawable/fullscann" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image1"
+                    android:layout_toEndOf="@+id/image1"
+                    android:layout_toRightOf="@+id/image1"
+                    android:text="@string/full_scan"
+                    android:textColor="@color/black"
+                    android:textSize="35px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/fulltime"
+                    android:layout_toEndOf="@+id/image1"
+                    android:layout_toRightOf="@+id/image1"
+                    android:text="@string/full_desc_scan" />
+
+                <ImageView
+                    android:id="@+id/b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:text="0"
+                    android:textColor="@color/colorAccent2"
+                    android:textStyle="bold"
+                    card-view:srcCompat="@drawable/entericon" />
+
+                <TextView
+                    android:id="@+id/lastscan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b1"
+                    android:layout_toEndOf="@+id/image1"
+                    android:layout_toRightOf="@+id/image1"
+                    android:text="@string/last_used"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:id="@+id/fulltime"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/image1"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_toEndOf="@+id/lastscan"
+                    android:layout_toRightOf="@+id/lastscan"
+                    android:text="1 days ago"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/rl_sdcardscan"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/card2"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <ImageView
+                    android:id="@+id/image2"
+
+                    android:layout_width="80dp"
+                    android:layout_height="61dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    card-view:srcCompat="@drawable/card31" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image2"
+                    android:layout_toEndOf="@+id/image2"
+                    android:layout_toRightOf="@+id/image2"
+                    android:text="Sd card Scan"
+                    android:textColor="@color/black"
+                    android:textSize="35px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/sdtime"
+                    android:layout_toEndOf="@+id/image2"
+                    android:layout_toRightOf="@+id/image2"
+                    android:text="@string/sdscan_desc" />
+
+                <ImageView
+                    android:id="@+id/b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:text="0"
+                    android:textColor="@color/colorAccent2"
+                    android:textStyle="bold"
+                    card-view:srcCompat="@drawable/entericon" />
+
+                <TextView
+                    android:id="@+id/protectionofff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/alarmdetail"
+                    android:layout_alignStart="@+id/alarmdetail"
+                    android:layout_below="@+id/name2"
+                    android:text="Off"
+                    android:textColor="@color/colorAccent2"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/alarmon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b2"
+                    android:layout_toEndOf="@+id/image2"
+                    android:layout_toRightOf="@+id/image2"
+                    android:text="@string/last_used"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:id="@+id/sdtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/alarmon"
+                    android:layout_alignBottom="@+id/alarmon"
+                    android:layout_alignEnd="@+id/a2"
+                    android:layout_alignRight="@+id/a2"
+                    android:text="1 days ago"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/rl_appscan"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/card3"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <ImageView
+                    android:id="@+id/image3"
+
+                    android:layout_width="80dp"
+                    android:layout_height="61dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    card-view:srcCompat="@drawable/appicon" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:text="@string/application_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image3"
+                    android:layout_toEndOf="@+id/image3"
+                    android:layout_toRightOf="@+id/image3"
+                    android:textColor="@color/black"
+                    android:textSize="35px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/apptime"
+                    android:layout_toEndOf="@+id/image3"
+                    android:layout_toRightOf="@+id/image3"
+                    android:text="@string/application_desc" />
+
+                <ImageView
+                    android:id="@+id/b4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:text="0"
+                    android:textColor="@color/colorAccent2"
+                    android:textStyle="bold"
+                    card-view:srcCompat="@drawable/entericon" />
+
+                <TextView
+                    android:id="@+id/b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b4"
+                    android:layout_toEndOf="@+id/image3"
+                    android:layout_toRightOf="@+id/image3"
+                    android:text="@string/last_used"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:id="@+id/apptime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/b3"
+                    android:layout_alignBottom="@+id/b3"
+                    android:layout_alignEnd="@+id/a3"
+                    android:layout_alignRight="@+id/a3"
+                    android:text="1 days ago"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@android:drawable/ic_dialog_dialer"
+                android:title="Home" />
+
+    <item
+        android:id="@+id/nav_virusscan"
+
+        android:icon="@drawable/virusico"
+        android:title="@string/virus_scan" />
+            <item
+                android:id="@+id/nav_antitheft"
+                android:icon="@android:drawable/ic_popup_disk_full"
+                android:title="@string/Anti_theft" />
+            <item
+                android:id="@+id/nav_applock"
+                android:icon="@drawable/lockednav"
+                android:title="@string/App_Lock" />
+            <item
+                android:id="@+id/nav_wifisecurity"
+                android:icon="@drawable/wifisecurityicon"
+                android:title="@string/wifisecurity" />
+            <item
+                android:id="@+id/nav_callblock"
+                android:icon="@android:drawable/stat_notify_missed_call"
+                android:title="@string/Call_Block" />
+    <item
+        android:id="@+id/nav_battersaver"
+        android:icon="@android:drawable/ic_lock_idle_low_battery"
+        android:title="@string/batterysaver" />
+
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_white_24dp"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="@string/app_about" />
+            <item
+                android:id="@+id/nav_terms"
+                android:icon="@android:drawable/ic_dialog_alert"
+                android:title="Privacy Policy" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Logout" />
+
+
+</menu>

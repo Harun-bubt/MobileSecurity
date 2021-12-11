@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4076b2</color>
+    <color name="colorPrimaryDark">#4076b2</color>
+    <color name="colorAccent">#4076b2</color>
+    <color name="blue">#3F51B5</color>
+    <item name="title_bg" type="color" >#2c5aa9</item>
+    <color name="white">#ffffff</color>
+    <color name="mainStart">#164185</color>
+    <color name="SecondaryColor">#d3d2d1</color>
+    <color name="SecondaryTextColor">#ffffff</color>
+    <color name="HighRiskColor">#e74c3c</color>
+    <color name="MediumRiskColor">#ff933c</color>
+    <color name="ProtectedRiskColor">#71b867</color>
+    <color name="fix_screen_progressbar_rim_bg_color">#ffffffff</color>
+    <color name="color_BackgroundAnimationProgress">#4B4F5E</color>
+    <color name="black55">#55000000</color>
+    <color name="purple">#5542b8</color>
+    <item name="drawer_bg_color_divide" type="color">#243040</item>
+    <color name="black">#000000</color>
+    <color name="colorAccent2">#1f9929</color>
+    <color name="orange">#ffff8000</color>
+    <color name="bright_red">#f22723</color>
+    <color name="dark_gray">#ff999999</color>
+    <color name="DividerColor">#4B4F5E</color>
+    <color name="info_icon_bottom_text">#726D6C</color>
+    <color name="black_gray">#2c2c2e</color>
+    <item name="gray" type="color">#323a45</item>
+    <color name="card_normal">#e6ffffff</color>
+    <color name="white55">#55eeeeee</color>
+    <color name="mainEnd">#4076b2</color>
+    <color name="primary">#E43F3F</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="iron">#CCCCCC</color>
+</resources>

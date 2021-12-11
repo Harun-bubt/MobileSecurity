@@ -1,0 +1,172 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+//kotlin("kapt")
+//id("kotlin-android")
+//id("dagger.hilt.android.plugin")
+
+android {
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId 'com.mobilesecurity.mobileapp'
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 9
+        versionName '3.1'
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables.useSupportLibrary = true
+
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.github.k0shk0sh:PermissionHelper:1.1.0'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    implementation 'com.google.android.gms:play-services-ads:19.7.0'
+    implementation 'joda-time:joda-time:2.10.3'
+    implementation 'com.github.jakob-grabner:Circle-Progress-View:1.2.8'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.jaeger.statusbaruitl:library:1.2.8'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.0'
+    implementation 'com.squareup.okio:okio:2.5.0'
+    implementation 'com.google.dagger:dagger:2.28.3'
+    implementation 'com.nononsenseapps:filepicker:3.1.0'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.5.1'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.28.3'
+    androidTestImplementation 'com.google.dagger:dagger:2.28.3'
+    testImplementation 'org.mockito:mockito-core:3.2.4'
+    testImplementation 'org.hamcrest:hamcrest-library:1.3'
+    androidTestImplementation 'org.mockito:mockito-core:3.2.4'
+    androidTestImplementation 'com.google.dexmaker:dexmaker:1.2'
+    androidTestImplementation 'com.google.dexmaker:dexmaker-mockito:1.2'
+    androidTestAnnotationProcessor 'com.google.dagger:dagger-compiler:2.28.3'
+    implementation 'com.github.amlcurran.showcaseview:library:5.4.3'
+    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
+    implementation 'androidx.legacy:legacy-support-core-ui:1.0.0'
+    implementation 'androidx.fragment:fragment:1.3.0'
+    implementation 'com.github.AmniX:MaterialPatternllockView:7a45dcaa79'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.github.ajalt.reprint:core:3.3.2@aar'
+    implementation 'com.github.ajalt.reprint:reprint_spass:3.3.2@aar'
+    implementation 'com.github.ajalt.reprint:reactive:2.8.0@aar'
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
+    implementation 'com.scottyab:aescrypt:0.0.1'
+    implementation 'com.google.android.gms:play-services-ads:19.7.0'
+    implementation files('libs/awais.jar')
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'com.anjlab.android.iab.v3:library:1.1.0'
+    implementation 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.github.martarodriguezm:rate-me:1.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    implementation 'com.github.Shashank02051997:FancyAlertDialog-Android:0.1'
+    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.3'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    apply plugin: 'com.google.gms.google-services'
+
+    implementation(Libs.kotlin)
+    implementation(Libs.appcompat)
+    implementation(Libs.coreKtx)
+    implementation(Libs.constraintLayout)
+    implementation(Libs.materialDesign)
+    // Multidex
+    implementation(Libs.multiDex)
+    // Coroutine
+    implementation(Libs.coroutineCore)
+    implementation(Libs.coroutineAndroid)
+    // Lifecycle components
+    implementation(Libs.lifecycleComponentExtension)
+    kapt(Libs.lifecycleComponentExtension)
+    // Viewmodel
+    implementation(Libs.viewmodel)
+    // Recyclerview
+    implementation(Libs.recyclerView)
+    // Glide
+    implementation(Libs.glide)
+    // Lottie
+    implementation(Libs.lottie)
+    // Acronym view
+    implementation(Libs.acronymView)
+    // Bottom nav bar
+    implementation(Libs.bottomBar)
+    // Navigation
+    implementation(Libs.navComponentFragment)
+    implementation(Libs.navComponentUi)
+    // Viewpager
+    implementation(Libs.viewPager)
+    // Smarttab layout utils
+    implementation(Libs.smartTabLayoutUtils)
+    // Hilt
+    implementation(Libs.hiltCore)
+    implementation(Libs.hiltCommon)
+    implementation(Libs.hiltViewModelLifecycle)
+    kapt(Libs.hiltDaggerAndroidCompiler)
+    kapt(Libs.hiltCompiler)
+
+    implementation(Libs.fabulousBottomBar)
+
+    implementation(Libs.fuzzySearch)
+
+    implementation(project(Modules.commons))
+    implementation(project(Modules.datasource))
+    implementation 'com.chaos.view:pinview:1.4.4'
+    implementation 'com.hbb20:ccp:2.4.5'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //OK HTTP
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.1'
+    implementation 'com.facebook.android:facebook-android-sdk:latest.release'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+}

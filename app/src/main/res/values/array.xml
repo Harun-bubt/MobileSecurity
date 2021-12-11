@@ -1,0 +1,30 @@
+<resources>
+ <string-array name="preferences_scan_action_entries">
+        <item>Quarantine</item>
+        <item>Repair</item>
+        <item>Delete</item>
+        <item>Skip</item>
+    </string-array>
+
+    <string-array name="preferences_scan_action_values" translatable="false">
+        <item>Quarantine</item>
+        <item>Repair</item>
+        <item>Delete</item>
+        <item>Skip</item>
+    </string-array>
+
+	
+	 <string-array name="quarantine_action_entries">
+        <item>After 7 days</item>
+        <item>After 30 days</item>
+        <item>After 45 days</item>
+    </string-array>
+
+    <string-array name="quarantine_action_values">
+        <item>7</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+   
+
+</resources>

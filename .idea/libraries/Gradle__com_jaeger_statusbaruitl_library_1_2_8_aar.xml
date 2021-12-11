@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jaeger.statusbaruitl:library:1.2.8@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/d470e8711c4ff53b380d6c98c3238516/jetified-library-1.2.8/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/d470e8711c4ff53b380d6c98c3238516/jetified-library-1.2.8/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/d470e8711c4ff53b380d6c98c3238516/jetified-library-1.2.8/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.jaeger.statusbaruitl/library/1.2.8/5b5705a11db5dd4a065be44e7f7a083c9ac83df9/library-1.2.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.jaeger.statusbaruitl/library/1.2.8/8168cba7f2b55d1a891bc6a97deb188910cee5d/library-1.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

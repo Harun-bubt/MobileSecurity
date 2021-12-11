@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.hilt:hilt-common:1.0.0-SNAPSHOT@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/92d7fa931f1701207f67b0b035745f88/jetified-hilt-common-1.0.0-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/92d7fa931f1701207f67b0b035745f88/jetified-hilt-common-1.0.0-SNAPSHOT/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/92d7fa931f1701207f67b0b035745f88/jetified-hilt-common-1.0.0-SNAPSHOT/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/androidx.hilt/hilt-common/1.0.0-SNAPSHOT/af925f0a423a00d6ad7e6cab440d160059393f0d/hilt-common-1.0.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/mainEnd">
+
+            <ImageView
+                android:id="@+id/imgv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/set_safephone_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgv"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Select a secure contact"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/et_safe_phone_number"
+                android:layout_weight="5"
+                android:background="@drawable/coner_white_rec"
+                android:drawableLeft="@drawable/contact_et_left_icon"
+                android:hint="Please enter a security number"
+                android:inputType="phone"
+                android:textColorHint="@color/purple"/>
+            <Button
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:id="@+id/btn_select_from_contact"
+				android:layout_below="@+id/et_safe_phone_number"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/add"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="10"
+        android:background="@color/purple"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mainEnd"
+            android:text="Next"
+            android:textColor="@color/white" />
+        
+    </LinearLayout>
+</LinearLayout>
+

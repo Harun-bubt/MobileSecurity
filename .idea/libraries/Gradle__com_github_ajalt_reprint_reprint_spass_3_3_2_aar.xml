@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ajalt.reprint:reprint_spass:3.3.2@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/dca5d5171ed61c09b8ae4676c2beffff/jetified-reprint_spass-3.3.2/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/dca5d5171ed61c09b8ae4676c2beffff/jetified-reprint_spass-3.3.2/jars/libs/pass-v1.2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/dca5d5171ed61c09b8ae4676c2beffff/jetified-reprint_spass-3.3.2/jars/libs/sdk-v1.0.0.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/dca5d5171ed61c09b8ae4676c2beffff/jetified-reprint_spass-3.3.2/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/dca5d5171ed61c09b8ae4676c2beffff/jetified-reprint_spass-3.3.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.github.ajalt.reprint/reprint_spass/3.3.2/978d53a90c15580006423f4934f698887a0447e5/reprint_spass-3.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <SwitchPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="enableOnlyAvailableNetworks"
+        android:summary="@string/pref_onlyavailable_summ"
+        android:title="@string/pref_onlyavailable" />
+    <SwitchPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="false"
+        android:key="onlyConnectToKnownAccessPoints"
+        android:summary="@string/pref_onlyknown_summ"
+        android:title="@string/pref_onlyknown" />
+
+    <!-- This preference is essentially just a button that allows for a nicer lay-out -->
+    <Preference
+        android:dependency="onlyConnectToKnownAccessPoints"
+        android:key="modifyHotspots"
+        android:summary="@string/modify_hotspots_summ"
+        android:title="@string/modify_hotspots" />
+
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainEnd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <!-- <com.google.android.gms.ads.AdView
+       android:background="#FF0000"
+       android:id="@+id/adView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       ads:adSize="SMART_BANNER"
+       ads:adUnitId="ca-app-pub-3912218987594825/9095635994"
+       android:layout_gravity="center_horizontal">
+   </com.google.android.gms.ads.AdView>
+-->
+
+</LinearLayout>

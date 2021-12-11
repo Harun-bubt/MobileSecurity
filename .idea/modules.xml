@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Regular_License.iml" filepath="$PROJECT_DIR$/.idea/modules/Regular_License.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Regular_License.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Regular_License.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Regular_License.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Regular_License.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/commons/Regular_License.commons.iml" filepath="$PROJECT_DIR$/.idea/modules/commons/Regular_License.commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datasource/Regular_License.datasource.iml" filepath="$PROJECT_DIR$/.idea/modules/datasource/Regular_License.datasource.iml" />
+    </modules>
+  </component>
+</project>

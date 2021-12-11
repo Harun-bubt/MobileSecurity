@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.nononsenseapps:filepicker:3.1.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/afc890e32ad0ff55efe469e0b3d32c08/jetified-filepicker-3.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/afc890e32ad0ff55efe469e0b3d32c08/jetified-filepicker-3.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/afc890e32ad0ff55efe469e0b3d32c08/jetified-filepicker-3.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.nononsenseapps/filepicker/3.1.0/dc1f659fe51737097211d19592c990f994f53caa/filepicker-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.nononsenseapps/filepicker/3.1.0/5d58d596d3cb07a4055ceed5d665bfd3d1cf9c6d/filepicker-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

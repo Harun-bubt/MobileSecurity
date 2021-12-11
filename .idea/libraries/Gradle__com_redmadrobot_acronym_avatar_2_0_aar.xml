@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.redmadrobot:acronym-avatar:2.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/77307f0f61e2750b1bfdfe57ccad15ce/jetified-acronym-avatar-2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/77307f0f61e2750b1bfdfe57ccad15ce/jetified-acronym-avatar-2.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/77307f0f61e2750b1bfdfe57ccad15ce/jetified-acronym-avatar-2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

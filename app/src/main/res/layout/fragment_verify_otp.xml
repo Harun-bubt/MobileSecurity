@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    tools:context=".Registration.Login.LoginActivity1">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llFooter"
+        android:paddingBottom="60dp"
+        android:scrollbars="none"
+        android:clipToPadding="false">
+
+        <RelativeLayout
+            android:id="@+id/rlContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="visible"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/logoFramlayout"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="40dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/logo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/middle_logo"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/levelLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/logoFramlayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTP ভেরিফিকেশন"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bangla"
+                    android:textSize="@dimen/big_text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/showNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="নম্বর এ ছয় ডিজিটের ভেরিফিকেশন কোড পাঠানো হয়েছে। অনুগ্রহ করে নিচের ঘরে কোডটি প্রবেশ লিখুন।"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/bangla"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:id="@+id/wrongFormatTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="ভুল OTP"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="gone" />
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pinViewForVerificationCode"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:itemBackground="@android:color/transparent"
+                    android:padding="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cursorColor="@color/black"
+                    app:cursorWidth="2dp"
+                    app:hideLineWhenFilled="false"
+                    app:itemCount="6"
+                    app:itemHeight="40dp"
+                    app:itemRadius="4dp"
+                    app:itemSpacing="5dp"
+                    app:itemWidth="35dp"
+                    app:lineColor="#C3C0C0"
+                    app:lineWidth="2dp"
+                    app:viewType="rectangle" />
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/progressbarLayout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/levelLayout">
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/circularview"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/progressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVerifyOtp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/progressbarLayout"
+                android:background="@drawable/button_background_rectangle"
+                android:fontFamily="@font/bangla"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="ভেরিফাই ওটিপি"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/againSendTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnVerifyOtp"
+                android:fontFamily="@font/bangla"
+                android:padding="8dp"
+                android:text="আবার পাঠান"
+                android:textColor="@color/red"
+                android:textSize="@dimen/medium_text"
+                android:layout_alignParentRight="true"
+                android:textStyle="normal"
+                android:layout_marginTop="4dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        // This LinearLayout will be aligned to the
+        // bottom of the screen and displayed above your keyboard
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

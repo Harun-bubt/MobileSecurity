@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ajalt.reprint:reactive:2.8.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/4fcf3469d53b3376a114a9b7406fb105/jetified-reactive-2.8.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/4fcf3469d53b3376a114a9b7406fb105/jetified-reactive-2.8.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/transforms-2/files-2.1/4fcf3469d53b3376a114a9b7406fb105/jetified-reactive-2.8.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.github.ajalt.reprint/reactive/2.8.0/6f2a78c775a00630d888a36fa679117f0c48a287/reactive-2.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Tools/gradle-7.3/caches/modules-2/files-2.1/com.github.ajalt.reprint/reactive/2.8.0/e7328d8f8afb5b24eb17bfd8a6a6309233401d9e/reactive-2.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
